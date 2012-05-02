@@ -7,3 +7,8 @@ Scenario: Verify the list is displayed
 	Given the application is running
 	When I type "Tim"
 	Then the output should contain "1. Global Thermonuclear War\n2. Risk\n3. Stratego\n4. Battleship\n5. Axis and Allies"
+
+Scenario: Verify the prompt shows up
+	Given the application is running
+	When I type "Tim"
+	Then the output should contain "Which game would you like to play?(1-5)"
